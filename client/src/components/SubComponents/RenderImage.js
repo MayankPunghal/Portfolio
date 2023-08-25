@@ -17,7 +17,7 @@ const RenderImage = ({images, orientation}) => {
         <div className="image-grid">
           {images.map((image, index) => (
             <div key={index} className="image-item">
-              <img src={image.url} alt={`Photograph : ${index + 1}`} style={{ height: getImageHeight(orientation) }} />
+              <img src={image.url} alt={`Photograph : ${index + 1}`} style={{ height: getImageHeight(orientation) } } loading='lazy' />
               <p>{image.caption}</p>
             </div>
           ))}
