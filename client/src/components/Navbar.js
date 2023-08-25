@@ -9,7 +9,7 @@ function Navbar() {
     <nav className="navbar">
       <ul>
         <li>
-          <AnimatedIcon text=":)" dataValue=":)" className = "navbar-items-icon" link="../e-card/card.html"/>
+          <AnimatedIcon text=":)" dataValue=":)" className = "navbar-items-icon" link="../card.html"/>
         </li>
         <li>
           <AnimatedText text="Home" dataValue="Home" className = "navbar-items" />
