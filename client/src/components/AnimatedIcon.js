@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 const AnimatedIcon = ({ text, dataValue, className, link}) => {
   const elementRef = useRef(null);
@@ -7,9 +8,7 @@ const AnimatedIcon = ({ text, dataValue, className, link}) => {
 
   const animateIcon = (event) => {
     let iteration = 0;
-
     clearInterval(event.target.interval);
-
     event.target.interval = setInterval(() => {
       event.target.innerText = event.target.innerText
         .split("")
@@ -17,33 +16,29 @@ const AnimatedIcon = ({ text, dataValue, className, link}) => {
           if (index < iteration) {
             return event.target.dataset.value[index];
           }
-
           return letters[Math.floor(Math.random() * 26)];
         })
         .join("");
-
       if (iteration >= event.target.dataset.value.length) {
         clearInterval(event.target.interval);
       }
-
       iteration += 1 / 7;
     }, 45);
   };
 
-  const navigateToLink = () => {
-    window.location.href = link;
-  };
-
   return (
-    <h1
-      onClick={navigateToLink}
-      ref={elementRef}
-      className={`animate-icon ${className}`}
-      data-value={dataValue}
-      onMouseOver={animateIcon}
-    >
+    <Link to={link} ref={elementRef} className={`animate-icon ${className}`} data-value={dataValue} onMouseOver={animateIcon}>
       {text}
-    </h1>
+    </Link>
+    // <h1
+    //   onClick={navigateToLink}
+    //   ref={elementRef}
+    //   className={`animate-icon ${className}`}
+    //   data-value={dataValue}
+    //   onMouseOver={animateIcon}
+    // >
+    //   {text}
+    // </h1>
   );
 };
 

@@ -5,11 +5,12 @@ import AnimatedText from './AnimatedWord';
 import AnimatedIcon from './AnimatedIcon';
 
 function Navbar() {
+
   return (
     <nav className="navbar">
       <ul>
         <li>
-          <AnimatedIcon text=":)" dataValue=":)" className = "navbar-items-icon" link="../card.html"/>
+          <AnimatedIcon text=":)" dataValue=":)" className = "navbar-items-icon" link="/Card"/>
         </li>
         <li>
           <AnimatedText text="Home" dataValue="Home" className = "navbar-items" />
