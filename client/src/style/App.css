@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+
+}
+body{
+  background-color: black;
+  overflow:hidden;
+  margin: 0;
+  padding: 0;
+  /* background: url('path/to/your/background-image.jpg') no-repeat center center fixed; */
+  background-size: cover;
+}
+.full-name {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex; /* Display the elements in a row */
+  gap: 5px; /* Gap between the elements */
+  align-items: center; /* Align the elements vertically in the center */
+  z-index:2;
+}
+
+.firstName
+{
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-family: 'Space Mono', monospace;
+  font-size: 72px;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+.lastName
+{
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 0px;
+  font-weight:lighter;
+}
+.navbar {
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* Change to column direction */
+  width: 150px; /* Set a width for the left sidebar */
+  height: 100vh; /* Set the height to match the viewport */
+  padding: 10px 0; /* Add padding to the top and bottom */
+  justify-content: flex-start; /* Align items at the top */
+  position: fixed; /* Fix the navbar position */
+  left: 0; /* Attach to the left side */
+  top: 0; /* Align to the top */
+  border-right: 2px solid white;
+  padding-right: 50px;
+  z-index:2;
+}
+
+.navbar li::marker {
+  content: none; /* Remove the default marker dots */
+}
+
+
+.navbar-items {
+  margin: 35px 0; /* Adjust the margin as needed */
+  font-family: 'Space Mono', monospace;
+  display: flex; /* Enable flex layout */
+  color: white;
+  text-decoration: none;
+}
+.navbar-items-icon {
+  margin: 25px 0; /* Adjust the margin as needed */
+  font-family: 'Space Mono', monospace;
+  display: flex; /* Enable flex layout */
+  padding-bottom: 70px  ;
+  color: white;
+  text-decoration: none;
+}
+.animate-word:hover {
+  font-weight: bold; /* Change text-transform to font-weight for bold effect */
+}
+.lastName.animate-word:hover {
+  font-weight:100; /* Apply bold font weight on hover for first name only */
+}
+.firstName.animate-word:hover {
+  font-weight:bolder; /* Apply bold font weight on hover for first name only */
+}
+
