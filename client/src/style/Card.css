@@ -14,7 +14,7 @@
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   position: relative;
-  background-color: #000;
+  /* background-color: #000; */
   font-family: 'Space Mono', monospace;
 }
 
@@ -67,20 +67,20 @@
   height: 100%; 
   width: 100%;
 }
-.content {
+.CardContent {
   transform: translateZ(70px) scale(0.8);
   line-height: 1.5em;
   display: flex;
   flex-direction: column;
 }
-.content h1 {
+.CardContent h1 {
   position: relative;
   font-size: 48px;
   margin-top:5px;
   padding-bottom:20px;
   padding-top:15px;
 }
-.content p {
+.CardContent p {
   margin-top: 35px;
   line-height: 1.5em;
   color: #fff;
@@ -156,24 +156,4 @@
 .container:hover:before {
   top:37%;
   opacity:1;
-}
-@media screen and (max-width: 720px) {
-  .container {
-    display: flex;
-    width: 70%;
-    height: 80%;
-  }
-
-  .socials {
-    flex-direction: column;
-    padding-top: 2rem;
-    z-index: 2;
-    gap: 2rem;
-  }
-  .socicon {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-  }
 }

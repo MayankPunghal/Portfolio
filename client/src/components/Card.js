@@ -7,8 +7,8 @@ const Card = () => {
     <div className="cardBody">
       <div className="container">
       <div className="front side">
-        <div className="content">
-          <h1>Mayank</h1>
+        <div className="CardContent">
+          <h1>Mayank Punghal</h1>
           <p>
             I am a web developer. I have worked with a range of programming languages, frameworks, and technologies -{' '}
             <b style={{ fontSize: '1.25rem' }}>ASP.NET, C#, Js, SQL</b> and others. I look forward to the opportunities
@@ -20,19 +20,19 @@ const Card = () => {
         </div>
       </div>
       <div className="back side">
-        <div className="content">
+        <div className="CardContent">
           <div className="socials">
             <a href="https://twitter.com/Mayankpunghal" target="_blank" className="fancy" rel="noreferrer">
-              <img src="../icons8-twitter.gif" alt="Twitter" loading="lazy" className="socicon" />
+              <img src="icons/icons8-twitter.gif" alt="Twitter" loading="lazy" className="socicon" />
             </a>
             <a href="https://www.instagram.com/mayankpunghal/" target="_blank" className="fancy" rel="noreferrer">
-              <img src="../icons8-instagram.gif" alt="Instagram" loading="lazy" className="socicon" />
+              <img src="icons/icons8-instagram.gif" alt="Instagram" loading="lazy" className="socicon" />
             </a>
             <a href="https://www.linkedin.com/in/mayankpunghal/" target="_blank" className="fancy" rel="noreferrer">
-              <img src="../icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" className="socicon" />
+              <img src="icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" className="socicon" />
             </a>
             <a href="https://github.com/MayankPunghal" target="_blank" className="fancy" rel="noreferrer">
-              <img src="../icons8-github.gif" alt="Github" className="socicon" />
+              <img src="icons/icons8-github.gif" alt="Github" className="socicon" />
             </a>
           </div>
           <div className="contacts">

@@ -1,7 +1,7 @@
 import React, { useRef} from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const AnimatedWord = ({ text, dataValue, className, component}) => {
+const AnimatedWord = ({ text, dataValue, className, link}) => {
   const elementRef = useRef(null);
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -27,22 +27,17 @@ const AnimatedWord = ({ text, dataValue, className, component}) => {
 
 
   return (
-    // <Link
-    //   to={component}
+    <Link to={link} ref={elementRef} className={`animate-word ${className}`} data-value={dataValue} onMouseOver={animateText}>
+      {text}
+    </Link>
+    // <h1
+    //   ref={elementRef}
     //   className={`animate-word ${className}`}
     //   data-value={dataValue}
     //   onMouseOver={animateText}
     // >
     //   {text}
-    // </Link>
-    <h1
-      ref={elementRef}
-      className={`animate-word ${className}`}
-      data-value={dataValue}
-      onMouseOver={animateText}
-    >
-      {text}
-    </h1>
+    // </h1>
   );
 };
 

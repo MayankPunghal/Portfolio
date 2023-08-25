@@ -5,7 +5,6 @@
 body{
   text-align: center;
   background-color: black;
-  overflow:hidden;
   margin: 0;
   padding: 0;
   background-size: cover;
@@ -14,9 +13,8 @@ body{
   text-align: center;
   justify-content: center;
   align-items: center;
-  display: flex; /* Display the elements in a row */
-  gap: 5px; /* Gap between the elements */
-  align-items: center; /* Align the elements vertically in the center */
+  display: flex;
+  gap: 5px;
   z-index:2;
 }
 
@@ -32,13 +30,12 @@ body{
 }
 .lastName
 {
-  text-align: center;
   color: white;
   text-decoration: none;
   font-family: 'Space Mono', monospace;
   font-size: 18px;
   text-transform: uppercase;
-  margin-top: 0px;
+  margin-top: 37px;
   font-weight:lighter;
 }
 .navbar {
@@ -86,4 +83,33 @@ body{
 .firstName.animate-word:hover {
   font-weight:bolder; /* Apply bold font weight on hover for first name only */
 }
+
+
+/*PHOTOGRAPHY*/
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.image-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image-item img {
+  width: 100%;
+  height: -webkit-fill-available; /* Set a fixed height for the images */
+  object-fit: cover; /* This will maintain the aspect ratio and cover the container */
+  display: block;
+}
+.PhotographyContent {
+  display: flex;
+  margin-left:200px;
+  flex: 1;
+  padding: 20px;
+}
+
+
 
