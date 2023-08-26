@@ -15,15 +15,15 @@ function Navbar() {
         <li>
           <AnimatedText text="Home" dataValue="Home" className = "navbar-items" link="/"/>
         </li>
-        <li>
+        {/* <li>
           <AnimatedText text="About" dataValue="About" className = "navbar-items" link="/About"/>
-        </li>
+        </li> */}
         <li>
           <AnimatedText text="Projects" dataValue="Projects" className = "navbar-items" link="/Projects"/>
         </li>
-        <li>
+        {/* <li>
           <AnimatedText text="Contact" dataValue="Contact" className = "navbar-items" link="/Contact"/>
-        </li>
+        </li> */}
         <li>
           <AnimatedText text="Photography" dataValue="Photography" className = "navbar-items" link="/Photography"/>
         </li>

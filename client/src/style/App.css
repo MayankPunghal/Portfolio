@@ -99,6 +99,7 @@ body{
 }
 .image-item {
   width: calc(32%); /* For 3 columns */
+  height:auto;
   position: relative;
   overflow: hidden;
   padding:3px;
@@ -113,6 +114,7 @@ body{
   display: block;
   border-radius: 8px;
   overflow: hidden;
+  object-position: center;
 }
 
 .joined-images{
@@ -134,4 +136,25 @@ body{
   display: block;
   border-radius: 8px;
   overflow: hidden;
+  object-position: center;
+}
+.image-item .blur-load {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  object-position: center;
+}
+.blur-load {
+  background-size: cover;
+  background-position: center;
+}
+.blur-load.loaded > img{
+  opacity:1;
+  transition: 300ms opacity ease;
+}
+.blur-load > img{
+  opacity:0;
 }
