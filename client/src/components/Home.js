@@ -15,15 +15,12 @@ const Home = () => {
       const rotationvalueinside1 = window.scrollY * 0.10 * 0.5;
       const rotationvalueinside2 = window.scrollY * 0.05 * 0.5;
       const rotationvalueinside3 = window.scrollY * 0.02 * 0.5;
-      const originalMin = 0; // Minimum value of the original range
-      const originalMax = 6000; // Maximum value of the original range
-      const newMin = 0.8; // Minimum value of the new range
-      const newMax = 20; // Maximum value of the new range
 
+      const originalMin = 0;const originalMax = 6000;
+      const newMin = 0.8;const newMax = 20;
       const normalize = (value) => {
         return newMin + ((value - originalMin) / (originalMax - originalMin)) * (newMax - newMin);
       };
-
       const scalevalueoutside = normalize(window.scrollY * 0.1);
       const scalevalueinside1 = normalize(window.scrollY * 0.1);
       const scalevalueinside2 = normalize(window.scrollY * 0.1);
@@ -33,10 +30,6 @@ const Home = () => {
       inside1ElemRight.style.transform = `translateX(-50%) translateY(-50%) rotate(-${rotationvalueinside1}deg) scale(${scalevalueinside1}) `;
       inside2ElemLeft.style.transform = `translateX(-50%) translateY(-50%) rotate(${rotationvalueinside2}deg) scale(${scalevalueinside2}) `;
       inside3ElemRight.style.transform = `translateX(-50%) translateY(-50%) rotate(-${rotationvalueinside3}deg) scale(${scalevalueinside3}) `;
-      // outsideElemLeft.style.transform = `scale(${scalevalueoutside})`;
-      // inside1ElemRight.style.transform =`scale(${scalevalueinside1})`;
-      // inside2ElemLeft.style.transform = `scale(${scalevalueinside2})`;
-      // inside3ElemRight.style.transform =`scale(${scalevalueinside3})`;
     };
     
     window.addEventListener('scroll', handleScroll);
@@ -53,6 +46,7 @@ const Home = () => {
             <img src = "/rotator1_r.png" className='scroll-animation-inside1 rotators'/>
             <img src = "/rotator2_l.png" className='scroll-animation-inside2 rotators'/>
             <img src = "/rotator3_r.png" className='scroll-animation-inside3 rotators'/>
+            <div className='back-blur'></div>
         <Navbar />
                 <div className="full-name centered-heading">
                 <AnimatedText text="Mayank" dataValue="Mayank" className="firstName" />
