@@ -86,30 +86,52 @@ body{
 
 
 /*PHOTOGRAPHY*/
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
-}
-
-.image-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-.image-item img {
-  width: 100%;
-  height: -webkit-fill-available; /* Set a fixed height for the images */
-  object-fit: cover; /* This will maintain the aspect ratio and cover the container */
-  display: block;
-}
 .PhotographyContent {
   display: flex;
-  margin-left:200px;
+  margin-left: 200px;
   flex: 1;
   padding: 20px;
 }
 
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-item {
+  width: calc(32%); /* For 3 columns */
+  position: relative;
+  overflow: hidden;
+  padding:3px;
+}
+.image-item p {
+  color: white;
+}
+.image-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+}
 
-
+.joined-images{
+  display: flex;
+  flex-wrap: wrap;
+}
+.joined-image-item{
+  width: calc(50%); /* For 3 columns */
+  position: relative;
+  overflow: hidden;
+}
+.joined-image-item p {
+  color: white;
+}
+.joined-image-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+}
