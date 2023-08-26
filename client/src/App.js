@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React, { useEffect } from "react";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
@@ -10,10 +10,21 @@ import Card from "./components/Card";
 
 
 function App() {
+  function ScrollToTopOnRouteChange() {
+    const { pathname } = useLocation();
   
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  
+    return null;
+  }
+
+
   return (
     <BrowserRouter>
       <div>
+      <ScrollToTopOnRouteChange />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/card" element={<Card />} />
