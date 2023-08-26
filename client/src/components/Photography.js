@@ -67,7 +67,7 @@ const Photography = () => {
     <div className="App">
         <div className='PhotographyContainer'>
         <Navbar />
-        <AnimatedText text="Photography" dataValue="Photography" className="firstName" />
+        <AnimatedText text="Photography" dataValue="Photography" className="full-name firstName" />
         <RenderImage images={landscape_wide_16x9} orientation = "landscape_wide"/>
         <RenderImage images={landscape_medium_3x2} orientation = "landscape_medium"/>
         <RenderImage images={portrait_tall_2x3} orientation = "portrait_tall"/>

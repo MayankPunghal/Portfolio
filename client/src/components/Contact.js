@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div className="App">
         <Navbar />
-        <AnimatedText text="Contact" dataValue="Contact" className="firstName" />
+        <AnimatedText text="Contact" dataValue="Contact" className="full-name firstName" />
         </div>
         );
     };

@@ -30,14 +30,6 @@ const AnimatedWord = ({ text, dataValue, className, link}) => {
     <Link to={link} ref={elementRef} className={`animate-word ${className}`} data-value={dataValue} onMouseOver={animateText}>
       {text}
     </Link>
-    // <h1
-    //   ref={elementRef}
-    //   className={`animate-word ${className}`}
-    //   data-value={dataValue}
-    //   onMouseOver={animateText}
-    // >
-    //   {text}
-    // </h1>
   );
 };
 

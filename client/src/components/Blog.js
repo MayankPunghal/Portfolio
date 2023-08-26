@@ -7,7 +7,7 @@ const Blog = () => {
   return (
     <div className="App">
         <Navbar />
-        <AnimatedText text="Blog" dataValue="Blog" className="firstName" />
+        <AnimatedText text="Blog" dataValue="Blog" className="full-name firstName" />
         </div>
         );
     };

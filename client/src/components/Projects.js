@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <div className="App">
         <Navbar />
-        <AnimatedText text="Projects" dataValue="Projects" className="firstName" />
+        <AnimatedText text="Projects" dataValue="Projects" className="full-name firstName" />
         </div>
         );
     };

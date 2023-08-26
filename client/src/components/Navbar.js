@@ -8,7 +8,6 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <ul>
         <li>
           <AnimatedIcon text=":)" dataValue=":)" className = "navbar-items-icon" link="/Card"/>
         </li>
@@ -30,7 +29,6 @@ function Navbar() {
         <li>
           <AnimatedText text="Blog" dataValue="Blog" className = "navbar-items" link="/Blog"/>
         </li>
-      </ul>
     </nav>
   );
 }
